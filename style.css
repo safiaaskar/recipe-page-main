@@ -1,0 +1,149 @@
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Eggshell);
+    font-family: 'Young Serif', serif;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    color: var(--Wenge-Brown);
+}
+
+.main {
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    margin: 10% 20%;
+    padding: 2rem;
+}
+
+.main .img {
+    overflow: hidden;
+    margin: auto;
+}
+
+.main .img img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.main .info h1 {
+    color: var(--Dark-Charcoal);
+    margin: 1.5rem 0;
+    font-weight: 400;
+}
+
+.preparation {
+    background-color: var(--Rose-White);
+    border-radius: 0.5rem;
+    font-family: 'Outfit', sans-serif;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.preparation h3 {
+    color: var(--Dark-Raspberry);
+}
+
+.preparation ul {
+    padding: 1rem 1.5rem;
+}
+.preparation li {
+    color: var(--Dark-Raspberry);
+    padding: 0.5rem 1rem;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+    margin: 2rem 0 1rem 0;
+    color: var(--Nutmeg);
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2{
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.ingredients ul,
+.instructions ol {
+    padding: 1rem 1.5rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.ingredients li,
+.instructions li {
+    padding: 0.5rem 1rem;
+}
+
+.nutrition {
+    margin-bottom: 0;
+}
+
+.nutrition h2 {
+    margin-bottom: 1rem;
+}
+
+.nutrition [title] {
+    margin-bottom: 1rem;
+}
+
+.nutrition .info {
+    color: var(--Wenge-Brown);
+    font-family: 'Outfit', sans-serif;
+    padding: .75rem 2rem;
+    display: flex;
+}
+
+.nutrition .info:not(:last-of-type) {
+    border-bottom: 0.01rem solid var(--Light-Grey);
+}
+
+.nutrition .info:last-of-type {
+    padding-bottom: 0;
+}
+
+.nutrition .info p {
+    flex: 0 0 15rem;
+}
+
+.nutrition .info b {
+    color: var(--Nutmeg);
+}
+
+@media (max-width: 500px) {
+
+    .main {
+        margin: 2%;
+        padding: 1.5rem;
+    }
+
+    .nutrition .info p {
+        flex: 0 0 10rem;
+    }
+
+    .attribution {
+        margin-top: 1rem !important;
+        text-align: center !important;
+    }
+}
